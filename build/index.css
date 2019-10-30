@@ -1,0 +1,68 @@
+body{
+    padding: 2rem;
+    text-align: center;
+    background-color: mistyrose;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#gh{
+    margin-left: 2rem;
+    position: absolute;
+    left: 0;
+}
+#so{
+    margin-right: 2rem;
+    position: absolute;
+    right: 0;
+}
+
+
+h1{
+    position: relative;
+    top: 15rem;
+    font-family: 'Staatliches', cursive; 
+    font-size: 3rem;
+}
+
+@media (max-width: 800px ){
+    h1{
+        position: relative;
+        top: 10rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 425px ){
+    h1{
+        position: relative;
+        top: 10rem;
+        font-size: 2.5rem;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+}
+
+
+.react-rotating-text-cursor {
+    animation: blinking-cursor 1s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  }
+  
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
