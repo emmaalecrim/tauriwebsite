@@ -1,9 +1,13 @@
 body {
-  padding: 1rem;
   text-align: center;
   background-color: mistyrose;
   font-family: 'Open Sans', sans-serif;
-  height: 100vh;
+}
+
+div#root {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 nav {
@@ -37,7 +41,7 @@ h1 {
 
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 10%;
   right: 10%;
 }
