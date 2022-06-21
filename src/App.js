@@ -3,7 +3,7 @@ import ReactRotationgText from 'react-rotating-text'
 
 function App() {
   return (
-    <body>
+    <div>
       <nav>
         <a
           id='gh'
@@ -89,14 +89,13 @@ function App() {
           <ReactRotationgText
             items={[
               'Adriano Alecrim ',
-              'Software Engineer',
-              'Stack Agnostic',
-              'Lover of complex problems',
-              'Stargate aficionado',
-              'Fountain Pen enthusiast',
-              'Lover of pets',
-              'Reader of poetry',
-              'Loves pink.',
+              'Software Engineer ',
+              'Stack Agnostic ',
+              'Loves complex problems ',
+              'Hard SciFi aficionado ',
+              'Fountain Pen enthusiast ',
+              'Pet adorer',
+              'Loves pink. ',
             ]}
           />
         </h1>
@@ -125,7 +124,7 @@ function App() {
           </svg>
         </a>
       </footer>
-    </body>
+    </div>
   )
 }
 
