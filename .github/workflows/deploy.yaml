@@ -14,7 +14,11 @@ jobs:
       - uses: actions/checkout@v5
       - name: Install and build
         run: yarn && export NODE_OPTIONS=--openssl-legacy-provider && yarn build
-  # Deploy job
+      - uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+        with:
+          path: build/
+        
+      
   deploy:
     # Add a dependency to the build job
     needs: build
@@ -35,3 +39,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+        with: 
