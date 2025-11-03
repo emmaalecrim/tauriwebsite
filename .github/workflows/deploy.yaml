@@ -13,7 +13,7 @@ jobs:
     steps: 
       - uses: actions/checkout@v5
       - name: Install and build
-        run: yarn && yarn build
+        run: yarn && export NODE_OPTIONS=--openssl-legacy-provider && yarn build
   # Deploy job
   deploy:
     # Add a dependency to the build job
